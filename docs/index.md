@@ -1,4 +1,4 @@
-![index.md](images/icon.png)
+[![index.md](images/icon.png)](./)
 
 
 ## Плагін xml_ua: Розбробка файлів обміну кадастровою інформацією у форматі XML

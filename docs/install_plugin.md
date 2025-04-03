@@ -1,5 +1,5 @@
 
-![index.md](images/icon.png)
+[![index.md](images/icon.png)](./)
 
 ### Встановлення плагіну xml_ua в QGIS.
 
