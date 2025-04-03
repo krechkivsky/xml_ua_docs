@@ -1,4 +1,4 @@
-[![index.md](images/icon.png)](./)
+[![index.md](images/icon.png)](./index.md)
 
 ## Створення нового XML-файлу
 

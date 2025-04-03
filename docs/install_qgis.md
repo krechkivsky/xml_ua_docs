@@ -1,5 +1,5 @@
 
-[![index.md](images/icon.png)](./)
+[![index.md](images/icon.png)](./index.md)
 
 
 ### Інсталяція QGIS
