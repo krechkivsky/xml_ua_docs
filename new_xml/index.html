@@ -680,6 +680,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -712,6 +714,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -720,26 +724,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xml-" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      Створення нового XML-файлу
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Створення нового XML-файлу">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#xml-_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Створення нового XML-файлу "з нуля"
+      Крок 1: Підготовка вихідних даних
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#2-xml-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 2: Створення "каркасу" XML-файлу
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 3: Додавання угідь
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 4: Додавання суміжників
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 5: Заповнення атрибутивних даних
+    </span>
+  </a>
   
 </li>
       
@@ -940,6 +965,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -948,26 +975,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xml-" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      Створення нового XML-файлу
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Створення нового XML-файлу">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#xml-_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Створення нового XML-файлу "з нуля"
+      Крок 1: Підготовка вихідних даних
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#2-xml-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 2: Створення "каркасу" XML-файлу
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 3: Додавання угідь
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 4: Додавання суміжників
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 5: Заповнення атрибутивних даних
+    </span>
+  </a>
   
 </li>
       
@@ -990,14 +1038,90 @@
   
 
 
-  <h1>Створення нового XML</h1>
-
-<h2 id="xml-">Створення нового XML-файлу</h2>
-<h3 id="xml-_1">Створення нового XML-файлу "з нуля"</h3>
-<p>Створення нового XML-файлу здійснюється шляхом редагування існуючого шаблону XML-файлу, з наступним збереженням XML-файлу під іншим іменем. 
-Шаблон XML-файлу - це частково або повністю заповнений XML файл. </p>
-<p>Шаблон XML-файлу <code>./xml_ua/templates/template.xml</code> не містить текстових і геометричних даних. 
-Його можна доповнювати даними про виконавця, територіальні органи влади, систему координат і т.п. та зберігати під іншими назвами. </p>
+<h1 id="xml-">Створення нового XML-файлу з геодезичних даних</h1>
+<p>Цей посібник демонструє найпоширеніший сценарій роботи інженера-землевпорядника: створення обмінного XML-файлу на основі даних, отриманих у результаті польових геодезичних вимірів.</p>
+<p>Процес складається з кількох логічних кроків: підготовка вихідних шарів, створення "каркасу" XML-файлу та послідовне наповнення його геометрією та атрибутами.</p>
+<h2 id="1">Крок 1: Підготовка вихідних даних</h2>
+<p>Після проведення польових вимірів у вас є точні координати нової земельної ділянки та її суміжників. Перш ніж створювати XML, ці дані потрібно представити у QGIS у вигляді простих векторних шарів.</p>
+<!-- 
+field_polygone
+field_poline   
+new_xml
+new_zone
+new_quarter
+new_parcel
+new_add_lands
+new_lands
+new_adjacent
+-->
+<ol>
+<li>
+<p><strong>Шар з полігоном ділянки.</strong> Створіть полігональний шар, який містить <strong>один</strong> полігон — межу вашої нової ділянки.</p>
+<p><img alt="Полігон ділянки" src="../images/field_polygone.png" /></p>
+</li>
+<li>
+<p><strong>Шар з лініями суміжників.</strong> Створіть лінійний шар, де кожна лінія представляє межу суміжної ділянки.</p>
+<p><img alt="Лінії суміжників" src="../images/field_poline.png" /></p>
+</li>
+</ol>
+<h2 id="2-xml-">Крок 2: Створення "каркасу" XML-файлу</h2>
+<p>Тепер, маючи полігон ділянки, ми можемо створити основу нашого XML-файлу.</p>
+<ol>
+<li>Виберіть полігон ділянки на карті за допомогою інструмента "Виділити об'єкти".</li>
+<li>
+<p>Клацніть на ньому правою кнопкою миші та в контекстному меню виберіть <strong>Створити XML з полігона</strong>.</p>
+<p><img alt="Створення XML з полігона" src="../images/new_xml.png" /></p>
+</li>
+</ol>
+<p>Плагін автоматично виконає низку важливих дій:</p>
+<ul>
+<li>
+<p>Пронумерує вузли (точки) та лінії межі за годинниковою стрілкою.</p>
+</li>
+<li>
+<p>Створить у <a href="../interface_widget/">вікні плагіна</a> відповідні розділи дерева XML для кадастрової зони, кварталу та самої ділянки.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Зона</th>
+<th style="text-align: center;">Квартал</th>
+<th style="text-align: center;">Ділянка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Розділ зони" src="../images/new_zone.png" /></td>
+<td style="text-align: center;"><img alt="Розділ кварталу" src="../images/new_quarter.png" /></td>
+<td style="text-align: center;"><img alt="Розділ ділянки" src="../images/new_parcel.png" /></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p>На цьому етапі ми отримали коректно структурований XML-файл з базовою геометрією зовнішньої межі.</p>
+<h2 id="3">Крок 3: Додавання угідь</h2>
+<ol>
+<li>Знову виділіть полігон ділянки на карті.</li>
+<li>
+<p>Клацніть правою кнопкою миші та виберіть <strong>Додати геометричні складові до <code>&lt;назва_файла&gt;</code> -&gt; Додати угіддя</strong>.</p>
+<p><img alt="Додавання угідь" src="../images/new_add_lands.png" /></p>
+</li>
+<li>
+<p>Плагін запропонує вибрати з класифікатира код класифікації угіддя, додасть відповідний шар на карту та створить розділ <code>&lt;Lands&gt;</code> у дереві XML.</p>
+<p><img alt="Додане угіддя" src="../images/new_lands.png" /></p>
+</li>
+</ol>
+<h2 id="4">Крок 4: Додавання суміжників</h2>
+<ol>
+<li>Виділіть на карті лінію, що представляє межу суміжника.</li>
+<li>
+<p>Клацніть на ній правою кнопкою миші та виберіть <strong>Додати геометричні складові до <code>&lt;назва_файла&gt;</code> -&gt; Додати суміжника</strong>.</p>
+<p><img alt="Додавання суміжника" src="../images/new_adjacent.png" /></p>
+</li>
+</ol>
+<p>Аналогічним чином ви можете додавати інші геометричні елементи, наприклад, обмеження.</p>
+<h2 id="5">Крок 5: Заповнення атрибутивних даних</h2>
+<p>Після того, як вся геометрія додана, вам залишається пройтися по дереву XML у вікні плагіна та заповнити всі необхідні текстові поля: інформацію про власника, замовника, виконавця, номери суміжних ділянок тощо.</p>
 
 
 
