@@ -12,13 +12,13 @@
         <meta name="author" content="Михайло Кречківський">
       
       
-        <link rel="canonical" href="https://krechkivsky.github.io/xml_ua_docs/sight_points/">
+        <link rel="canonical" href="https://krechkivsky.github.io/xml_ua_docs/validation/">
       
       
-        <link rel="prev" href="../templates/">
+        <link rel="prev" href="../add_adjacent/">
       
       
-        <link rel="next" href="../plugin_folder/">
+        <link rel="next" href="../visual_control/">
       
       
       <link rel="icon" href="../images/icon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Створні точки - Плагін XML-UA для QGIS</title>
+        <title>Робота над помилками - Плагін XML-UA для QGIS</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#xml" class="md-skip">
           Перейти до змісту
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Створні точки
+              Робота над помилками
             
           </span>
         </div>
@@ -281,10 +281,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../new_xml/" class="md-tabs__link">
           
   
@@ -301,12 +303,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../crs/" class="md-tabs__link">
           
   
@@ -623,26 +623,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -655,7 +660,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Основні можливості
@@ -735,10 +740,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../validation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Робота над помилками
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -749,6 +776,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Запускаємо перевірку
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -788,31 +844,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -825,7 +876,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Довідник
@@ -882,32 +933,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Створні точки
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sight_points/" class="md-nav__link">
         
   
   
@@ -918,53 +947,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Зміст">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Зміст
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Звідки вони беруться?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Погляньмо на приклад
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      У чому ж проблема?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1049,27 +1031,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Звідки вони беруться?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Погляньмо на приклад
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      У чому ж проблема?
+      Запускаємо перевірку
     </span>
   </a>
   
@@ -1094,33 +1058,33 @@
   
 
 
-<h1 id="_1">Створні точки (або чому пряма не завжди пряма)</h1>
-<p>У світі геометрії Евкліда, через дві точки можна провести лише одну пряму. Але у світі кадастру та геодезії все трохи цікавіше. Іноді на ідеально прямій лінії з'являються "зайві" точки. Це і є наші герої — <strong>створні точки</strong>.</p>
-<blockquote>
-<p><strong>Створна точка</strong> — це точка, яка лежить на прямій лінії (або настільки близько до неї, що відхилення менше за точність вимірювань) і не є поворотною.</p>
-</blockquote>
-<h2 id="_2">Звідки вони беруться?</h2>
-<p>Зазвичай, створні точки з'являються не в результаті польових вимірів (геодезист не ставить зайві віхи на прямій), а внаслідок камеральних робіт — тобто, геометричних обчислень в офісі.</p>
-<p>Наприклад, вам потрібно "прив'язати" межу ділянки до кута будинку, межового знаку або краю дороги. Ви проєктуєте цей об'єкт на лінію межі, і в місці проєкції утворюється нова точка. Вона не змінює напрямок межі, але тепер є її частиною.</p>
-<h2 id="_3">Погляньмо на приклад</h2>
-<p>Давайте знову подивимось на наш малюнок з <a href="../visual_control/">попереднього розділу</a>.</p>
-<p><img alt="Приклад створних точок" src="../images/topo_error.png" /></p>
-<blockquote>
-<p><strong>Наближення</strong> - спеціальний інструмент у <strong>QGIS</strong>, який дозволяє побачити "конструкцію" вузлів та ліній.</p>
-<p>Звичайно при проектуванні ділянок <strong>Масштаб 1:1000</strong> і <strong>Наближення 100%</strong>. Змінювати ці значення можна просто коліщатком миші. </p>
-</blockquote>
-<p>На перший погляд, межа ділянки від вузла <code>2</code> до <code>5</code> — це пряма лінія. Але уважніше придивившись, ми бачимо на ній вузли <strong><code>3</code></strong> та <strong><code>4</code></strong>. Аналогічно, на відрізку між вузлами <code>6</code> та <code>10</code> знаходяться вузли <strong><code>7</code></strong> та <strong><code>9</code></strong>.</p>
-<p>Це і є створні точки. Вони є повноцінними вузлами межі ділянки.</p>
-<h2 id="_4">У чому ж проблема?</h2>
-<p>Самі по собі створні точки не є проблемою. Проблема виникає, коли їх <strong>ігнорують</strong>.</p>
-<p>У нашому прикладі, коли створювали суміжника (чорна штриова лінія), його провели від вузла <code>10</code> до <code>11</code>, повністю проігнорувавши існування вузлів <code>7</code> та <code>9</code>. В результаті ми отримали дві різні геометрії, які мали б бути однаковими:</p>
+<h1 id="xml">Робота над помилками: або як не збожеволіти від XML</h1>
+<p>Ви коли-небудь читали <a href="https://zakon.rada.gov.ua/laws/show/1051-2012-%D0%BF#Text" target="_blank">Постанову 1051</a>? Це такий собі талмуд, що описує структуру кадастрового XML-файлу. Кажуть, там сотні правил, і кожне з них — чудовий засіб від безсоння. Варто почати читати, і сон приходить миттєво.</p>
+<p>На щастя, вам не доведеться вивчати цей документ напам'ять. Плагін <strong>XML-UA</strong> виступає у ролі вашого особистого цензора та помічника:</p>
 <ul>
-<li>Межа ділянки на цьому відрізку складається з точок: <code>... -&gt; 6 -&gt; 7 -&gt; 8 -&gt; 9 -&gt; 1 -&gt; ...</code></li>
-<li>Межа суміжника складається з точок: <code>10 -&gt; 6 -&gt; 8 -&gt; 1 -&gt; 11</code> (де лінія 10-11 проходить "над" 7 і 9).</li>
+<li>Він <strong>не дозволить вам додати щось зайве</strong> в структуру файлу.</li>
+<li>А якщо чогось бракує або щось пішло не так — він обов'язково про це розповість.</li>
 </ul>
-<p>Для комп'ютера (і для Державного земельного кадастру) це груба <strong>топологічна помилка</strong>. Межі не збігаються, хоча на карті виглядають однаково.</p>
-<p><strong>Правильний підхід:</strong> при створенні суміжника потрібно було вказати, що його межа проходить через ті ж самі точки: <code>7</code>, <code>9</code>.</p>
-<p>Завдяки візуалізації в плагіні <strong>XML-UA</strong> ви можете легко помітити такі ситуації і переконатися, що всі ваші об'єкти (ділянки, суміжники, обмеження) використовують спільні вузли там, де їхні межі збігаються.</p>
+<h2 id="_1">Запускаємо перевірку</h2>
+<p>Щоб дізнатися, чи все гаразд у вашому файлі, достатньо виконати команду <strong>Перевірити</strong>.</p>
+<p><img alt="Перевірити XML" src="../images/item_check.png" /></p>
+<p>Перевірка може зайняти трохи часу — плагін ретельно аналізує кожний тег і атрибут. Після завершення ви, скоріш за все, побачите щось схоже на це:</p>
+<p><img alt="Результат перевірки" src="../images/validation.png" /></p>
+<p>Не лякайтеся червоного кольору! Давайте розберемося, що тут до чого.</p>
+<ol>
+<li>
+<p><strong>Звіт про помилки (1):</strong> Це текстовий лог, який має скоріше допоміжне значення. Можете сміливо згорнути його, натиснувши на маленький трикутник <strong>(2)</strong>, щоб не заважав.</p>
+</li>
+<li>
+<p><strong>Дерево XML:</strong> Ось тут і відбувається вся магія!</p>
+<ul>
+<li>Елемент, що містить помилку <strong>(3)</strong>, <strong>підсвічується червоним</strong>.</li>
+<li>Дерево автоматично <strong>розкривається до самого помилкового елемента</strong>. Вам не доведеться його довго шукати серед сотень рядків.</li>
+<li>Найголовніше: просто <strong>наведіть курсор мишки на червоний елемент</strong>, і у спливаючій підказці <strong>(4)</strong> ви побачите детальний опис помилки. Плагін людською мовою пояснить, що саме йому не сподобалося.</li>
+</ul>
+</li>
+</ol>
+<p>Тепер ви знаєте, де проблема, і можете легко її виправити, не вдаючись до глибокого вивчення нормативних документів.</p>
 
 
 
