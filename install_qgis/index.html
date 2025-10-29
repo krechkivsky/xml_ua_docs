@@ -535,6 +535,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 4: Встановлення необхідних бібліотек
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1075,6 +1084,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Крок 4: Встановлення необхідних бібліотек
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1117,6 +1135,24 @@
 <p>Для інших операційних систем (macOS, Linux) інструкції також доступні на офіційній сторінці завантаження.</p>
 </blockquote>
 <p>Тепер ви готові до встановлення плагіна XML-UA!</p>
+<h2 id="4">Крок 4: Встановлення необхідних бібліотек</h2>
+<p>Для повноцінної роботи плагіна XML-UA потрібні деякі додаткові бібліотеки, які не входять до стандартної поставки QGIS. Не лякайтеся, це не складно!
+<img src="../images/install_library.png" alt="Встановлення бібліотек" style="vertical-align: middle;"></p>
+<ol>
+<li>Після встановлення QGIS, на вашому робочому столі або в меню "Пуск" з'явиться папка <code>QGIS 3.XX.X</code> (<span style="font-size: large; color: red; font-weight: bold;">1</span>). Відкрийте її.</li>
+<li>
+<p>Знайдіть і "запустіть" ярлик <strong>"OSGeo4W Shell"</strong> (<span style="font-size: large; color: red; font-weight: bold;">2</span>). Це спеціально налаштований термінал, який дозволяє працювати з інструментами QGIS.</p>
+</li>
+<li>
+<p>У спеціально налаштованому терміналі, який відкриється (<span style="font-size: large; color: red; font-weight: bold;">3</span>), послідовно виконайте дві команди, натискаючи <code>Enter</code> після кожної та дочекавшись їх успішного завершення:</p>
+<p>pip install lxml (<span style="font-size: large; color: red; font-weight: bold;">4</span>)</p>
+<p>pip install docxtpl (<span style="font-size: large; color: red; font-weight: bold;">5</span>)</p>
+<p>Ці бібліотеки дозволять плагіну коректно працювати з XML-документами та генерувати звіти у форматі Word.</p>
+<blockquote>
+<p><strong>Важливо:</strong> Переконайтеся, що ви бачите повідомлення про успішне встановлення для обох команд. Якщо виникнуть помилки, перевірте підключення до інтернету або спробуйте запустити <code>OSGeo4W Shell</code> від імені адміністратора.</p>
+</blockquote>
+</li>
+</ol>
 
 
 
