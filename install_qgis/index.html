@@ -1143,12 +1143,13 @@
 <p>Знайдіть і "запустіть" ярлик <strong>"OSGeo4W Shell"</strong> (<span style="font-size: large; color: red; font-weight: bold;">2</span>). Це ярлик до спеціально налаштованого терміналу, який дозволяє працювати з інструментами QGIS.</p>
 </li>
 <li>
-<p>У цьому терміналі (<span style="font-size: large; color: red; font-weight: bold;">3</span>), послідовно виконайте дві команди, натискаючи <code>Enter</code> після кожної та дочекавшись їх успішного завершення:</p>
-<p>pip install lxml (<span style="font-size: large; color: red; font-weight: bold;">4</span>)</p>
-<p>pip install docxtpl (<span style="font-size: large; color: red; font-weight: bold;">5</span>)</p>
-<p>Ці бібліотеки дозволять плагіну коректно працювати з XML-документами та генерувати звіти у форматі Word.</p>
+<p>У цьому терміналі (<span style="font-size: large; color: red; font-weight: bold;">3</span>), послідовно виконайте всі команди, наведені нижче,  натискаючи <code>Enter</code> після кожної та дочекавшись їх успішного завершення:</p>
+<p><code>pip install lxml</code> (<span style="font-size: large; color: red; font-weight: bold;">4</span>)</p>
+<p><code>pip install docxtpl</code> (<span style="font-size: large; color: red; font-weight: bold;">5</span>) <small> [ця команда виводить багато інформації про процес встановлення, так, що наступні команди не будуть видні в терміналі] </small></p>
+<p><code>pip install pymorphy2 pymorphy2-dicts-uk</code></p>
+<p>Ці бібліотеки дозволять плагіну коректно працювати з XML-документами та генерувати звіти у форматі MS Word, відповно дл правил української мови.</p>
 <blockquote>
-<p><strong>Важливо:</strong> Переконайтеся, що ви бачите повідомлення про успішне встановлення для обох команд. Якщо виникнуть помилки, перевірте підключення до інтернету або спробуйте запустити <code>OSGeo4W Shell</code> від імені адміністратора.</p>
+<p><strong>Важливо:</strong> Переконайтеся, що ви бачите повідомлення про успішне встановлення для усіх  команд. Якщо виникнуть помилки, перевірте підключення до інтернету або спробуйте запустити <code>OSGeo4W Shell</code> від імені адміністратора.</p>
 </blockquote>
 </li>
 </ol>
