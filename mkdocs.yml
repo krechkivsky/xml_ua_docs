@@ -1,48 +1,56 @@
-site_name: Документація QGIS плагіна xml_ua # Назва твого сайту
-site_url: https://krechkivsky.github.io/xml_ua_docs/ # URL твого сайту (якщо будеш публікувати на GitHub Pages)
-repo_url: https://github.com/krechkivsky/xml_ua_docs # URL твого репозиторію на GitHub
-repo_name: GitHub # Назва репозиторію, що відображатиметься у верхньому правому куті
-nav: # Навігація
-  - Головна: index.md
-  - Встановлення QGIS: install_qgis.md
-  - Встановлення плагіна: install_plugin.md
-  - Створення нового XML: new_xml.md
-  - Візуальний контроль: visual_control.md
-  - Система координат: crs.md
+# Конфігурація сайту
+site_name: 'Плагін XML-UA для QGIS'
+site_url: 'https://your-github-username.github.io/xml_ua_docs/' # TODO: Замініть на ваш URL
+site_author: 'Ваше імʼя або назва організації'
+site_description: 'Документація для плагіна XML-UA, який спрощує роботу з кадастровими XML-файлами в QGIS.'
+
+# Авторські права
+copyright: 'Copyright &copy; 2024, Ваше імʼя'
+
+# Репозиторій
+repo_url: 'https://github.com/your-github-username/xml_ua_docs' # TODO: Замініть на URL вашого репозиторію
+repo_name: 'xml_ua_docs'
+edit_uri: 'edit/main/docs/' # Шлях для редагування сторінок прямо з сайту
+
+# Тема
 theme:
-  name: material # Використання теми Material for MkDocs
-  language: uk # Встановлення української мови
+  name: material
+  language: uk
+  logo: images/icon.png
+  favicon: images/icon.png
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
+    - navigation.tabs # Навігація у вигляді вкладок
+    - navigation.top # Кнопка "Нагору"
+    - navigation.sections # Розділи в бічній панелі
+    - search.suggest # Пропозиції при пошуку
+    - search.highlight # Підсвічування результатів пошуку
+    - content.code.copy # Кнопка копіювання для блоків коду
+    - content.tabs.link # Посилання на конкретні вкладки в контенті
   palette:
+    # Світла тема
     - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/weather-sunny
+        name: Перемкнути на темну тему
+    # Темна тема
     - scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-plugins:
-  - search
-extra_css:
-  - stylesheets/extra.css
+        icon: material/weather-night
+        name: Перемкнути на світлу тему
+
+# Структура навігації
+nav:
+  - 'Головна': 'index.md'
+  - 'Встановлення':
+    - 'Встановлення QGIS': 'install_qgis.md'
+    - 'Встановлення плагіна': 'install_plugin.md'
+  - 'Основні можливості':
+    - 'Створення нового XML': 'new_xml.md'
+    - 'Візуальний контроль геометрії': 'visual_control.md'
+  - 'Довідник':
+    - 'Системи координат': 'crs.md'
+  - 'Часті питання (FAQ)': 'faq.md' # Файл-заглушка, який можна створити
