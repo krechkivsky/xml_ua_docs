@@ -12,13 +12,13 @@
         <meta name="author" content="Михайло Кречківський">
       
       
-        <link rel="canonical" href="https://krechkivsky.github.io/xml_ua_docs/validation.html">
+        <link rel="canonical" href="https://krechkivsky.github.io/xml_ua_docs/template2xml.html">
       
       
-        <link rel="prev" href="add_adjacent.html">
+        <link rel="prev" href="new_xml.html">
       
       
-        <link rel="next" href="visual_control.html">
+        <link rel="next" href="zone_quarter.html">
       
       
       <link rel="icon" href="images/icon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Робота над синтаксичними помилками - Плагін xml_ua для QGIS</title>
+        <title>Створення XML з шаблону - Плагін xml_ua для QGIS</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xml" class="md-skip">
+        <a href="#xml-" class="md-skip">
           Перейти до змісту
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Робота над синтаксичними помилками
+              Створення XML з шаблону
             
           </span>
         </div>
@@ -695,10 +695,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="template2xml.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Створення XML з шаблону
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="template2xml.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -709,6 +731,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Що таке XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Навіщо потрібні XML-шаблони?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як створити XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як використовувати XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поради щодо організації шаблонів
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Висновок
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -764,32 +860,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Робота над синтаксичними помилками
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="validation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="validation.html" class="md-nav__link">
         
   
   
@@ -800,35 +874,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Зміст">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Зміст
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Запускаємо перевірку
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1152,9 +1197,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#xml-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Що таке XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Навіщо потрібні XML-шаблони?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як створити XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xml-_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як використовувати XML-шаблон?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Запускаємо перевірку
+      Поради щодо організації шаблонів
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Висновок
     </span>
   </a>
   
@@ -1179,28 +1269,55 @@
   
 
 
-<h1 id="xml">Робота над помилками у атрибутах XML</h1>
-<p>Ви коли-небудь читали <a href="https://zakon.rada.gov.ua/laws/show/1051-2012-%D0%BF#Text" target="_blank">Постанову 1051</a>? Це такий собі лонгрід, що описує структуру кадастрового XML-файлу. Кажуть, там сотні правил, і кожне з них — чудовий засіб від безсоння. Варто почати читати, і сон приходить миттєво.</p>
-<p>Хороша новина: Вам не доведеться вивчати цей документ напам'ять. Плагін <strong>xml_ua</strong> знає все, що у тому лонгріді написано про XML-файли:</p>
+<h1 id="xml-">XML-шаблони: Спрощуємо створення кадастрових файлів</h1>
+<p>Цей розділ допоможе Вам зрозуміти, як використовувати шаблони XML у плагіні xml_ua, щоб пришвидшити створення кадастрових файлів.</p>
+<h2 id="xml-_1">Що таке XML-шаблон?</h2>
+<p>Це звичайний файл XML без просторових (геометричних) даних.</p>
+<h2 id="xml-_2">Навіщо потрібні XML-шаблони?</h2>
+<p>Уявіть собі, що ви часто готуєте один і той самий документ, наприклад, звіт про земельну ділянку. В ньому завжди є:</p>
 <ul>
-<li>Він <strong>не дозволить вам додати зайвий або неправильний атрибут</strong> у файл.</li>
-<li>А якщо чогось бракує або щось пішло не так — він обов'язково про це розповість.</li>
+<li>Ваше ім'я та контактні дані.</li>
+<li>Інформація про навчальний заклад.</li>
+<li>Стандартні фрази та формулювання.</li>
 </ul>
-<h2 id="_1">Запускаємо перевірку</h2>
-<p>Перевірка XML-файлу після кожної зміни атрибутів занадто навантажує процесор, особливо на не нових ноутбуках. Порядок елементів XML строго регламетується. Тому, дії <strong>"Впорядкувати за XSD"</strong> і <strong>"Перевірити"</strong> здійснюється тільки за командою користувача.</p>
-<p><img alt="Перевірити XML" src="images/item_check.png" /></p>
-<p>Після завершення перевірки у вікні віджета дерево xml буде розкрито на <strong>всіх</strong> елементах з помилкою, і вони будуть виділені червоним кольором. 
-Щоб дізнатися, у чому полягає помилка, досить навести вказівник миші на червоний елмент, і у спливаючій підказці буде повний опис помилки. </p>
-<p><a href="images/err_syntax.png" target="_blank" title="Натисніть, щоб відкрити зображення у повному розмірі">
-    <img src="images/err_syntax.png" alt="Головне вікно плагіна">
+<p>Замість щоразу вводити все це з нуля, ви можете створити <strong>шаблон</strong> — файл-заготовку з усією цією інформацією. Потім, коли вам знадобиться новий звіт, ви просто відкриєте шаблон, додасте унікальні дані (наприклад, опис конкретної ділянки) і збережете як новий файл.</p>
+<p>XML-шаблон працює так само, але для кадастрових файлів. Це XML-файл, у якому вже заповнена вся службова інформація (про виконавця, замовника, систему координат, документи тощо), крім геометрії земельної ділянки.</p>
+<h2 id="xml-_3">Як створити XML-шаблон?</h2>
+<ol>
+<li><strong>Відкрийте існуючий XML-файл або використайте напівфабрикат на будь-якому етапі створення</strong>.</li>
+<li>В файлах, які будуть створюватись з нового шаблону, будуть використані всі дані крім геометричних (наприклад, дані про інженера, назву організації, систему координат, власника, документи тощо).</li>
+<li>У меню плагіна <strong>xml_ua</strong> виберіть <strong>Зберегти як шаблон...</strong>.</li>
+</ol>
+<p><img alt="Зберегти" src="images/item_template.png" /></p>
+<ol>
+<li>Вкажіть назву для вашого шаблону (наприклад, "Практика_1_ПІБ").</li>
+</ol>
+<p>Тепер цей файл збережено як шаблон у папці шаблонів, і ви можете використовувати його для створення нових XML-файлів.</p>
+<h2 id="xml-_4">Як використовувати XML-шаблон?</h2>
+<ol>
+<li>Створіть на карті QGIS об'єкт (полігон), який представляє земельну ділянку.</li>
+<li>Виділіть цей полігон.</li>
+<li>Клацніть правою кнопкою миші на карті та в контекстному меню виберіть <strong>Створити XML з шаблону</strong> і вкажіть назву потрібного шаблона:</li>
+</ol>
+<p><a href="images/template2xml.png" target="_blank" title="Натисніть, щоб відкрити зображення у повному розмірі">
+    <img src="images/template2xml.png" alt="Створити XML з шаблону">
 </a></p>
-<p>Як правило, це відсутність обов'язкового дочірнього елемента. </p>
-<p>Для кожного такого випадку плагін "знає", які дочірні необхідні елементи вже додано, а які ще потрібно додати. Лише ті, які потрібно, будуть з'являтися у контекстному меню.</p>
-<p>Взагалі, плагін "знає", що і де можна додати, або видалити з дерева xml. Пам'ятає також, які елементи обов'язковими, а які ні. Досить лише клацнути правою кнопкою миші на потрібному елементі.</p>
-<p><a href="images/err_correction.png" target="_blank" title="Натисніть, щоб відкрити зображення у повному розмірі">
-    <img src="images/err_correction.png" alt="Головне вікно плагіна">
+<p>Плагін створить новий XML-файл, автоматично заповнивши всі дані з шаблону. Включно з інформацією про виконавця робіт та усіма даними про власника ділянки, такими як паспортні дані, ІПН, тощо:</p>
+<p><a href="images/from_template.png" target="_blank" title="Натисніть, щоб відкрити зображення у повному розмірі">
+    <img src="images/from_template.png" alt="XML з шаблона">
 </a></p>
-<p>Тепер ви знаєте, де проблема, і можете легко її виправити, не вдаючись до глибокого вивчення нормативних документів.</p>
+<h2 id="_1">Поради щодо організації шаблонів</h2>
+<ul>
+<li>Давайте шаблонам зрозумілі імена, щоб легко знаходити їх.</li>
+<li>Видаляйте старі шаблони, які більше не потрібні <strong>(крім template.xml - базового шаблону)</strong>.</li>
+<li>Для зручності можна створити кілька підпапок у папці шаблонів (наприклад, "Замовники", "Типи робіт"). Як тільки Ваш шаблон буде переміщений у підпапку, він зникне з контекстного меню.</li>
+</ul>
+<p>Щоб відкрити папку з шаблонами:
+1.  У QGIS виберіть <strong>Налаштування -&gt; Користувацькі профілі -&gt; Відкрити каталог активного профілю</strong>.
+2.  У відкритій папці перейдіть до <code>python\plugins\xml_ua\templates</code>.</p>
+<p>Тут ви можете перейменовувати, видаляти та впорядковувати файли шаблонів.</p>
+<h2 id="_2">Висновок</h2>
+<p>XML-шаблони — це простий, але ефективний спосіб заощадити час та зменшити кількість рутинних операцій при створенні кадастрових файлів.</p>
 
 
 

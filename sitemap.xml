@@ -2,62 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/index.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/add_adjacent.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/crs.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://krechkivsky.github.io/xml_ua_docs/documentation.html</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://krechkivsky.github.io/xml_ua_docs/docx_templates.html</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://krechkivsky.github.io/xml_ua_docs/graphic_documents.html</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/install_plugin.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/install_qgis.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/interface_layers.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/interface_menu.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/interface_widget.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/new_xml.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/plugin_folder.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/sight_points.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://krechkivsky.github.io/xml_ua_docs/template2xml.html</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/templates.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/validation.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/visual_control.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://krechkivsky.github.io/xml_ua_docs/zone_quarter.html</loc>
-         <lastmod>2026-02-20</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
 </urlset>
