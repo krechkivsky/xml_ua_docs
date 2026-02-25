@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="new_xml.html" class="md-tabs__link">
+        <a href="gps_data_import.html" class="md-tabs__link">
           
   
   
@@ -703,6 +703,29 @@
             Створення і перевірка XML-файлів
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gps_data_import.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Імпорт даних GPS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1111,6 +1134,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="&#34;Проблема&#34; СК-63">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-63_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як задати користувацьку СК-63 для відомої зони
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1258,6 +1296,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="&#34;Проблема&#34; СК-63">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-63_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Як задати користувацьку СК-63 для відомої зони
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1311,6 +1364,61 @@
 <h2 id="-63">"Проблема" СК-63</h2>
 <p>Особливу увагу варто приділити <strong>системі координат 1963 року (СК-63)</strong>. Величезна кількість земельних ділянок в Україні була обміряна саме в цій системі. Основна проблема полягає в тому, що СК-63 була "умовною" — кожна область (а іноді й район) мала свої власні зони та параметри перерахунку.</p>
 <p>Це означає, що не існує єдиного універсального способу перетворити координати з СК-63 в сучасну УСК-2000. Перерахунок завжди потребує локальних ключів (параметрів трансформації), і без них точність може бути втрачена, що призводить до зміщень та накладок ділянок. Саме тому так важливо знати, в якій системі координат велася зйомка, і використовувати відповідні параметри.</p>
+<h3 id="-63_1">Як задати користувацьку СК-63 для відомої зони</h3>
+<p>Якщо вам відома <strong>зона СК-63</strong>, ви можете створити її як <strong>користувацьку СК</strong> в QGIS і призначати шарам/проєкту без пошуку коду EPSG:</p>
+<ol>
+<li>Відкрийте <strong>Налаштування (Settings) → Користувацькі системи координат… (Custom Projections…)</strong>.</li>
+<li>Натисніть <strong>Додати нову (Add new)</strong>, задайте назву (наприклад, <code>СК-63 зона X</code>).</li>
+<li>У полі параметрів вставте PROJ-рядок потрібної зони (див. нижче) і збережіть.</li>
+<li>Призначте створену СК для шару (<strong>Властивості шару → Джерело → Призначити СК</strong>) або для проєкту (<strong>Властивості проєкту → СК</strong>).</li>
+</ol>
+<p><strong>СК-63 зона X</strong></p>
+<pre><code class="language-proj">+proj=tmerc
++lat_0=0
++lon_0=24
++k=1
++x_0=1500000
++y_0=0
++ellps=krass
++units=m
++no_defs
+</code></pre>
+<p><strong>СК-63 зона C</strong></p>
+<pre><code class="language-proj">+proj=tmerc
++lat_0=0
++lon_0=30
++k=1
++x_0=2500000
++y_0=0
++ellps=krass
++units=m
++no_defs
+</code></pre>
+<p><strong>СК-63 зона P</strong></p>
+<pre><code class="language-proj">+proj=tmerc
++lat_0=0
++lon_0=36
++k=1
++x_0=3500000
++y_0=0
++ellps=krass
++units=m
++no_defs
+</code></pre>
+<p><strong>СК-63 зона T</strong></p>
+<pre><code class="language-proj">+proj=tmerc
++lat_0=0
++lon_0=42
++k=1
++x_0=4500000
++y_0=0
++ellps=krass
++units=m
++no_defs
+</code></pre>
+<blockquote>
+<p>Якщо потрібно не лише <em>задати СК</em>, а й <em>перерахувати</em> координати з/в інші СК з високою точністю, можуть знадобитися локальні параметри трансформації (ключі), які залежать від вашої території та вихідних матеріалів.</p>
+</blockquote>
 <h2 id="_3">Дозволені системи координат</h2>
 <p><a href="https://zakon.rada.gov.ua/laws/show/1051-2012-%D0%BF#Text" target="_blank">Порядок ведення Державного земельного кадастру</a> визначає перелік систем координат, які можна використовувати в обмінних файлах XML:</p>
 <ul>
