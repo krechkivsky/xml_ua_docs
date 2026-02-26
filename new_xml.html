@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://krechkivsky.github.io/xml_ua_docs/new_xml.html">
       
       
-        <link rel="prev" href="interface_layers.html">
+        <link rel="prev" href="gps_data_import.html">
       
       
         <link rel="next" href="template2xml.html">
@@ -306,7 +306,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="new_xml.html" class="md-tabs__link">
+        <a href="project_crs.html" class="md-tabs__link">
           
   
   
@@ -708,6 +708,52 @@
             Створення і перевірка XML-файлів
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="project_crs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Перед початком роботи
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gps_data_import.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Імпорт даних gps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1298,7 +1344,12 @@
 
 
 <h1 id="xml-">Створення нового XML-файлу з геодезичних даних</h1>
-<p>Цей посібник демонструє найпоширеніший сценарій роботи інженера-землевпорядника: створення обмінного XML-файлу на основі даних, отриманих у результаті польових геодезичних вимірів.</p>
+<hr />
+<p><small>
+У версії 0.9.1 плагін працює лише з системами координат УСК2000 і СК63 X1-X7, C1-4, P1-4, T1-4. Інші можуть бути додані при потребі. 
+</small></p>
+<hr />
+<p>Ця сторінка описує найпоширеніший сценарій роботи інженера-землевпорядника: створення обмінного XML-файлу на основі даних, отриманих у результаті польових геодезичних вимірів.</p>
 <p>Процес складається з кількох логічних кроків: підготовка вихідних даних, створення "каркасу" XML-файлу та послідовне наповнення його геометрією та атрибутами.</p>
 <h2 id="1">Крок 1: Підготовка вихідних даних</h2>
 <p>З даних геодезичної зйомки створіть полігональний та лінійний шари, які містять полігони з межами  ділянки, її частин (угіддя, оренда тощо) та лінії суміжників.</p>
