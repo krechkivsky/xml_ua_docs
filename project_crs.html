@@ -725,6 +725,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Перед початком роботи
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="project_crs.html" class="md-nav__link md-nav__link--active">
         
   
@@ -736,6 +749,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Швидкий спосіб вибору (визначення) системи координат проекту:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Детальніше (і трохи теорії):
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1214,6 +1264,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Швидкий спосіб вибору (визначення) системи координат проекту:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Детальніше (і трохи теорії):
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1232,8 +1308,13 @@
 
 
 <h1 id="xml">Перед тим, як створювати або відкривати XML</h1>
+<hr />
 <p>Перед тим, як створювати або відкривати XML, слід правильно задати систему координат проекту, відповідну системі координат Ваших даних (Меню QGIS: Проект → Властивості → Система координат).</p>
 <hr />
+<h2 id="_1">Швидкий спосіб вибору (визначення) системи координат проекту:</h2>
+<p><a href="https://gpsgeometer.com/geozones/"><img alt="Карта зон CRS України" src="images/CRS_ua.png" /></a></p>
+<hr />
+<h2 id="_2">Детальніше (і трохи теорії):</h2>
 <ol>
 <li>Якщо вхідні дані в УСК-2000  то код EPSG проєкту вибирається з діапазону від 6381 до 6387. Приблизно його можна вибрати за червоним прямокутником на карті вікна вибору систем координат:</li>
 </ol>
@@ -1258,17 +1339,6 @@
 33.00°-36.00° → 7829<br />
 36.00°-39.00° → 7830<br />
 39.00°-42.00° → 7831  </p>
-<ol>
-<li>Як стверджується у <a href="https://www.researchgate.net/publication/356764566_Vprovadzenna_sistemi_koordinat_SK-63_u_specialne_programne_zabezpecenna_Viraz">статті С. І. Бурковського та ін.</a> "Державна служба України з питань геодезії, картографії та кадастру у своїх розрахунках розповсюдила район Х на усю територію України." Однак, для інших районів СК-63 (C, P, T), для підвищення точності, запропоновано використовувати інші проекції (Таблиця 2, згаданої статті).</li>
-</ol>
-<p>Коротко: кожен район (крім X) СК-63: C, P, T має по чотири зони 1, 2, 3, 4. 
-Визначити зону можна по координаті Y:</p>
-<p>якщо 1,000,000 ≤ Y &lt; 2,000,000 → зона 1    <br />
-якщо 2,000,000 ≤ Y &lt; 3,000,000 → зона 2    <br />
-якщо 3,000,000 ≤ Y &lt; 4,000,000 → зона 3    <br />
-якщо 4,000,000 ≤ Y &lt; 5,000,000 → зона 4      </p>
-<p>Ці 12 систем координат (3 райони по 4 зони) додаються у користувацькі СК QGIS. Наприклад, для СК-63 району P, зони 3, треба вибрати <strong>User-defined</strong> → SK63_P3:</p>
-<p><img alt="Вибір користувацької СК" src="images/user_defined_crs.png" /></p>
 
 
 
