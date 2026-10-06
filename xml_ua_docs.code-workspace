@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			// Цей шлях має вказувати на вашу папку з проєктом.
+			// Якщо workspace-файл лежить поруч з папкою docs, шлях буде ".".
+			"path": "."
+		}
+	],
+	"settings": {
+		// Тут можуть бути ваші налаштування для проєкту
+	},
+	// Додайте цю секцію
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "MkDocs: Запустити сервер",
+				"type": "shell",
+				"command": "mkdocs serve",
+				"group": "build",
+				"presentation": {
+					"reveal": "always",
+					"panel": "new"
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "MkDocs: Зібрати сайт",
+				"type": "shell",
+				"command": "mkdocs build",
+				"problemMatcher": []
+			},
+			{
+				"label": "MkDocs: Опублікувати сайт",
+				"type": "shell",
+				"command": "mkdocs gh-deploy",
+				"problemMatcher": []
+			}
+		],
+		"presentation": {
+			"echo": true,
+			"reveal": "always",
+			"focus": false,
+			"panel": "shared"
+		}
+	}
+}

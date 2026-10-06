@@ -1,14 +1,15 @@
+use_directory_urls: false
 # Конфігурація сайту
-site_name: 'Плагін XML-UA для QGIS'
-site_url: 'https://your-github-username.github.io/xml_ua_docs/' # TODO: Замініть на ваш URL
-site_author: 'Ваше імʼя або назва організації'
-site_description: 'Документація для плагіна XML-UA, який спрощує роботу з кадастровими XML-файлами в QGIS.'
+site_name: 'Плагін xml_ua для QGIS'
+site_url: 'https://krechkivsky.github.io/xml_ua_docs/' # TODO: Замініть на ваш URL
+site_author: 'Михайло Кречківський'
+site_description: 'Документація для плагіна xml_ua, який спрощує роботу з кадастровими XML-файлами в QGIS.'
 
 # Авторські права
-copyright: 'Copyright &copy; 2024, Ваше імʼя'
+copyright: 'Copyright &copy; 2026, krechkivsky.dev@gmail.com'
 
 # Репозиторій
-repo_url: 'https://github.com/your-github-username/xml_ua_docs' # TODO: Замініть на URL вашого репозиторію
+repo_url: 'https://github.com/krechkivsky/xml_ua_docs' # TODO: Замініть на URL вашого репозиторію
 repo_name: 'xml_ua_docs'
 edit_uri: 'edit/main/docs/' # Шлях для редагування сторінок прямо з сайту
 
@@ -16,7 +17,7 @@ edit_uri: 'edit/main/docs/' # Шлях для редагування сторі�
 theme:
   name: material
   language: uk
-  logo: images/icon.png
+  logo: images/logo.png
   favicon: images/icon.png
   features:
     - navigation.tabs # Навігація у вигляді вкладок
@@ -48,9 +49,27 @@ nav:
   - 'Встановлення':
     - 'Встановлення QGIS': 'install_qgis.md'
     - 'Встановлення плагіна': 'install_plugin.md'
-  - 'Основні можливості':
-    - 'Створення нового XML': 'new_xml.md'
+  - 'Інтерфейс':
+    - 'Опис меню': 'interface_menu.md'
+    - 'Опис віджету': 'interface_widget.md'
+    - 'Панель шарів': 'interface_layers.md'
+  - 'Створення і перевірка XML-файлів':
+    - 'Перед початком роботи': 'project_crs.md'
+    - 'Імпорт даних gps': 'gps_data_import.md'
+    - 'Створення XML-файлів "з нуля"': 'new_xml.md'
+    - 'Створення XML-файлів з шаблону': 'template2xml.md'
+    - 'Зона, квартал, ділянка': 'zone_quarter.md'
+    - 'Детальніше про суміжників': 'add_adjacent.md'
+    - 'Робота над синтаксичними помилками': 'validation.md'
     - 'Візуальний контроль геометрії': 'visual_control.md'
+    - 'Експрес контроль при відкритті файлів': 'express_control.md'
+  - 'Створення документації':
+    - 'Підготовка документації': 'documentation.md'
+    - 'Графічні документи': 'graphic_documents.md'
+    - 'Власні шаблони текстових документів': 'docx_templates.md'
   - 'Довідник':
     - 'Системи координат': 'crs.md'
-  - 'Часті питання (FAQ)': 'faq.md' # Файл-заглушка, який можна створити
+    - 'Шаблони': 'templates.md'
+    - 'Створні точки': 'sight_points.md'
+    - 'Папка плагіна': 'plugin_folder.md'
+    - 'Офлайн документація': 'https://github.com/krechkivsky/xml_ua_docs/releases/latest'

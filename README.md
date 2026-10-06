@@ -26,3 +26,11 @@ Covers both beginner-friendly instructions and professional workflows.
 
 - Email: krechkivsky.dev@gmail.com  
 - LinkedIn: [https://www.linkedin.com/in/krechkivskyi](https://www.linkedin.com/in/krechkivskyi)
+
+---
+
+## Offline documentation (ZIP releases)
+
+Repository ZIP (`Code -> Download ZIP`) contains only the `main` branch. To download the latest built HTML for offline use, use GitHub **Releases** (generated on tags `v*`) and download `xml_ua_docs-site.zip`.
+
+This automation does not replace the local workflow (`publication.bat`); it mirrors it on tag push: `mkdocs build` + publish via `ghp-import` + attach ZIP to a Release.
